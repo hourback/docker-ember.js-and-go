@@ -13,6 +13,6 @@ RUN mkdir /gopath
 RUN chown guest:guest /gopath
 RUN echo "export GOPATH=/gopath" >> /home/guest/.profile
 
-RUN echo "export PATH=$PATH:/usr/local/go/bin" >> /home/guest/.profile
+RUN echo 'export PATH=$PATH:/usr/local/go/bin' >> /home/guest/.profile
 
 EXPOSE 8080
